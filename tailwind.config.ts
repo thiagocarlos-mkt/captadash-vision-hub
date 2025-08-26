@@ -79,18 +79,20 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
-			backgroundImage: {
-				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-secondary': 'var(--gradient-secondary)',
-				'gradient-background': 'var(--gradient-background)',
-				'gradient-glass': 'var(--gradient-glass)'
-			},
-			boxShadow: {
-				'glow-primary': 'var(--shadow-glow-primary)',
-				'glow-secondary': 'var(--shadow-glow-secondary)',
-				'card': 'var(--shadow-card)',
-				'elevated': 'var(--shadow-elevated)'
-			},
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-secondary': 'var(--gradient-secondary)',
+        'gradient-background': 'var(--gradient-background)',
+        'gradient-glass': 'var(--gradient-glass)',
+        'gradient-surface': 'var(--gradient-surface)',
+        'gradient-accent': 'var(--gradient-accent)'
+      },
+      boxShadow: {
+        'glow-primary': 'var(--shadow-glow)',
+        'glow-secondary': 'var(--shadow-glow)',
+        'card': 'var(--shadow-card)',
+        'elevated': 'var(--shadow-elevated)'
+      },
 			backdropBlur: {
 				'glass': '20px'
 			},
@@ -120,7 +122,7 @@ export default {
 					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
 				'glow': {
-					'0%, 100%': { boxShadow: 'var(--shadow-glow-primary)' },
+					'0%, 100%': { boxShadow: 'var(--shadow-glow)' },
 					'50%': { boxShadow: '0 0 60px hsla(var(--primary), 0.5)' }
 				}
 			},
